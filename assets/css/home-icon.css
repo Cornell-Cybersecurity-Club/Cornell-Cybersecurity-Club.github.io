@@ -1,0 +1,14 @@
+.home-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 80px;
+    width: 80px;
+    padding: 0;
+}
+
+.home-icon > img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}

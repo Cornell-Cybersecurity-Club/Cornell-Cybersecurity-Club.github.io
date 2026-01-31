@@ -1,0 +1,12 @@
+.content {
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.info {
+    color: #555;
+}

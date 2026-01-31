@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <title>Cornell Cybersecurity Club Blog</title>
+</head>
+<body>
+    <div class="fancy-title white-bg"><img src="/assets/images/logo.png" alt="CCY Lock Logo"><h1>Blog @ Cyber Security Club</h1></div>
+
+    <ul class="white-bg article-list">
+      {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{post.pretty-date}} - {{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
