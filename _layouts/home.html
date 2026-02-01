@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/home.css">
-    <title>Cornell Cybersecurity Club Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/post-card.css">
+  <link rel="shortcut icon" size="16x16" href="/assets/images/logo-16.png" type="image/png">
+  <link rel="shortcut icon" size="32x32" href="/assets/images/logo-32.png" type="image/png">
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}{{ site.baseurl }}/feed.xml" title="{{ site.title }}" />
+  <title>Cornell Cybersecurity Club Blog</title>
 </head>
 <body>
-    <div class="fancy-title white-bg"><img src="/assets/images/logo.png" alt="CCY Lock Logo"><h1>Blog @ Cyber Security Club</h1></div>
-
-    <ul class="white-bg article-list">
+  <div class="home-container">
+    <div class="fancy-title white-bg"><img src="/assets/images/logo.png" alt="CCY Lock Logo"><h1>Blog @ Cornell Cyber</h1></div>
+    <h2>Featured</h2>
+    <h2>Archive</h2>
+    <div class="post-card-container">
       {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{post.pretty-date}} - {{ post.title }}</a></li>
+      {% include post-card.html post=post %}
       {% endfor %}
-    </ul>
+    </div>
+  </div>
 </body>
 </html>

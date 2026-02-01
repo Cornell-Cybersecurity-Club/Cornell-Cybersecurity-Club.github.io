@@ -9,6 +9,9 @@ github_username: Cornell-Cybersecurity-Club
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+
+excerpt_separator: <!-- more -->
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,14 +1,17 @@
+.home-container {
+    margin: 50px;
+}
+
 .fancy-title {
     font-size: large;
     display: flex;
     align-items: center;
     gap: 20px;
-    margin: 50px;
     padding: 20px;
 }
 
 .fancy-title > img {
-    height: auto;
+    height: 5em;
     max-width: 100%;
 }
 
