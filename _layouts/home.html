@@ -15,6 +15,12 @@
   <div class="home-container">
     <div class="fancy-title white-bg"><img src="/assets/images/logo.png" alt="CCY Lock Logo"><h1>Blog @ Cornell Cyber</h1></div>
     <h2>Featured</h2>
+      {% assign featured_posts = site.tags['featured'] %}
+      <div class="post-card-container">
+      {% for post in featured_posts %}
+      {% include post-card.html post=post %}
+      {% endfor %}
+      </div>
     <h2>Archive</h2>
     <div class="post-card-container">
       {% for post in site.posts %}
