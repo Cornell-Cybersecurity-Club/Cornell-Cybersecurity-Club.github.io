@@ -9,5 +9,9 @@
     padding: 10px;
     width: 300px;
     text-decoration: none;
-    color: #000;
+    color: var(--primary-text-color);
+}
+
+.post-card a, .post-card i, .post-card p {
+    color: var(--primary-text-color);
 }

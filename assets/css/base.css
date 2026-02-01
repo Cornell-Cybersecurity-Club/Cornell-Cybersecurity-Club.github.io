@@ -1,20 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --primary-text-color: #d7d7d7;
+    --alt-text-color: #989898;
+    --primary-red: #fb2139;
+    --alt-red: #ee828f;
+    --primary-bg: #1a1a1a;
+    --dots-bg: #444444;
+    --alt-bg: #232323;
+    --border-color: #969696;
+}
 
 body {
     margin: 0;
-    background-color: #ccc;
-    background-image: radial-gradient(circle at center, #777 1px, transparent 0);
+    background-color: var(--primary-bg);
+    background-image: radial-gradient(circle at center, var(--dots-bg) 1px, transparent 0);
     background-size: 40px 40px; 
     min-height: 100vh;
     width: 100%;
-    font-family: "Inter", sans-serif;
+    font-family: "MesloNerdFont", monospace;
+    color: var(--primary-text-color)
 }
 
-.white-bg {
-    background-color: #ddd;
-    border: solid #111 1px;
+.alt-backing {
+    background-color: var(--alt-bg);
+    border: solid var(--border-color) 1px;
 }
 
 .info {
-    color: #555;
+    color: var(--alt-text-color);
+}
+
+@font-face {
+  font-family: 'MesloNerdFont';
+  src: url('/assets/fonts/Meslo/MesloLGLDZNerdFontMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'MesloNerdFont';
+}
+
+a:link {
+    color: var(--primary-red);
+}
+
+a:visited {
+    color: var(--alt-red);
 }
