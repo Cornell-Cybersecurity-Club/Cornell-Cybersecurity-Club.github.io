@@ -4,7 +4,7 @@ This is the blog for the Cornell Cybersecurity Club where we will post resources
 
 ## Local Setup
 
-1. Install prerequisites: https://jekyllrb.com/docs/installation/
+1. Install prerequisites described [at the official Jekyll documentation](https://jekyllrb.com/docs/installation/)
 2. Clone and cd to this repository
 3. Run `bundle install`
 4. You should now be able to host the site locally with `bundle exec jekyll serve`
@@ -25,4 +25,4 @@ When ready, submit for review. When merged, GitHub Actions will automatically co
 
 ## Other Tips
 
-- You can add icons by searching for the icon UTF code you want to use [here](https://www.nerdfonts.com/cheat-sheet) then add `&#x` in front. While not necessary, we prefer if you put icons in a span and give it the class name `icon`. For example, to show a person icon, just use `<span class="icon">&#xf415</span>`
+- You can add icons by searching for the icon UTF code you want to use [at Nerd Fonts](https://www.nerdfonts.com/cheat-sheet) then add `&#x` in front. While not necessary, we prefer if you put icons in a span and give it the class name `icon`. For example, to show a person icon, just use `<span class="icon">&#xf415</span>`

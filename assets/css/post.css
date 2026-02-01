@@ -8,6 +8,22 @@
     padding: 20px;
 }
 
+.content img {
+  max-width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+.content table {
+  min-width: 100%;
+  overflow-x: scroll; 
+}
+
+.content table, .content th, .content td {
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   .content {
     margin: 20px;
