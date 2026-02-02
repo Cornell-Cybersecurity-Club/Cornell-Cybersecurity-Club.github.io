@@ -12,8 +12,8 @@
   <title>Cornell Cybersecurity Club Blog</title>
 </head>
 <body>
-  <div class="home-container">
-    <div class="fancy-title alt-backing"><img src="/assets/images/logo.png" alt="CCY Lock Logo"><h1>Blog @ Cornell Cyber</h1></div>
+  <main class="home-container">
+    <header class="fancy-title alt-backing"><img src="/assets/images/logo.png" alt="CCY Lock Logo"><h1>Blog @ Cornell Cyber</h1></header>
     <h2>Featured</h2>
       {% assign featured_posts = site.tags['featured'] %}
       <div class="post-card-container">
@@ -27,6 +27,6 @@
       {% include post-card.html post=post %}
       {% endfor %}
     </div>
-  </div>
+  </main>
 </body>
 </html>
