@@ -7,10 +7,18 @@ pretty-date: 1 Feb. 2026
 excerpt: Spring 26 Cornell CTF Writeup
 ---
 
-The Spring CTF concluded on January 31st, 2026 with 48 users and 1 unblooded challenge. Unlike the Fall mini CTF, this competiion included challenges made by members of the CTF competition team. With NECCDC in the same month, I only managed to make 1 blind web challenge, and also a collection of OSINT challenges, which were mostly from my photo dump in Vietnam. This blog post will only contain the writeups for my challenges, but will also contain links to other writeups as I receive them from the team.
+The Spring CTF concluded on January 31st, 2026 with 48 users and 1 unblooded challenge. Unlike the Fall mini CTF, this competiion included challenges made by members of the CTF competition team. With NECCDC in the same month, I only managed to make 1 blind web challenge, and also a collection of OSINT challenges, which were mostly from my photo dump in Vietnam. 
+
+This blog post will contain the follwing challenges: 'Under Construction', 'Drinks', 'Beautiful', '🥥🍦', 'Food', and 'Ts class pmo'.
+
+For other challenges, I will add them right under here when I received them from the competition team.
+
+[Big Red Curve](https://github.coecis.cornell.edu/yj576/bigred-gpa-update-system-writeup)
+
+With that being said, here are the writeups for my challs!
 
 ## Web
-### Under Construction
+### **Under Construction**
 #### 2 solves
 
 I thought of this challenge when I was in Vietnam, which was also when I had to do scripting and infra for the CCDC team, so I made this (what I thought) simple blind-web challenge.
@@ -47,7 +55,7 @@ Honestly I wanted to write an actual challenge instead of this, but we'll just h
 Now for everyone's favorite part, OSINT!
 This semester, I spent a big chunk of my winter break in Vietnam. Had lots of food and drinks (definitely needed that) and went to a lot of cool places.
 
-### Drinks
+### **Drinks**
 #### 18 solves
 ```
 I had drinks here. Drinks were mid, view is ok. Find the google maps location of the coffee shop
@@ -67,7 +75,7 @@ The flag then is:
 ccy{1 Trần Phú, Phường 1, Vũng Tàu, Bà Rịa - Vũng Tàu 78000, Vietnam}
 ```
 
-### Beautiful
+### **Beautiful**
 #### 15 solves
 ```
 Isn't the beach so beautiful. Find the google maps location
@@ -104,7 +112,7 @@ The flag is then obvious from there
 ccy{154A Hạ Long, Phường 2, Vũng Tàu, Bà Rịa - Vũng Tàu 78000, Vietnam}
 ```
 
-### Food
+### **Food**
 #### 5 solves
 ```
 O NOM NOM NOM NOM. Find the google maps location
@@ -115,4 +123,52 @@ e.g. ccy{343 Campus Rd, Ithaca, NY 14853}
 
 This is where the challenges got difficult. A google image search on the second photo would reveal that the food I was eating was called ``bánh khọt``. If you noticed there were either shrimps or squids there also, which in Vietnamese would be ``tôm`` or ``mực``,repsectively. Creatively, the full name of that dish is ``bánh khọt tôm`` or ``bánh khọt mực``. 
 
-However a problem quickly arises, there are too many places that sell that food in the area.
+However a problem quickly arises, there are too many places that sell that food in the area. You *could* go through all of the stores that sell the food, nothing wrong with that. But there are better ways to do this.
+
+Looking at the first picture, you might have noticed that the store is located in a small road (You could see the car and refer to that). That's a big hint as a lot of of the stores are tourism traps, which are usually out in the open roads.
+
+![Food3](/assets/images/ctf-writeups/cornellsp26/OSINT7.png)
+
+There is also something subtle in the picture that some might have missed, and that is the numerical address. If you zoom in to the middle-right side of the picture, you'll see the number "11". This means that our store is probably numbered from 8-14 (depends on the direction). 
+
+![Food4](/assets/images/ctf-writeups/cornellsp26/OSINT8.png)
+
+From there, it is quite easy to determine which one it is. There are only like 3-4 stores that fits all requirements, and this was the one I was looking for.
+
+![Food5](/assets/images/ctf-writeups/cornellsp26/OSINT9.png)
+
+```
+ccy{8B Lương Văn Can, Phường 2, Vũng Tàu, Bà Rịa - Vũng Tàu, Vietnam}
+```
+
+### **Ts class pmo**
+```
+Whyyy do I have to take this class? Whyyy is it required for me. Flag is ccy{Class} e.g. ccy{CS1110}
+```
+
+![Tcp1](/assets/images/ctf-writeups/cornellsp26/OSINT10.png)
+
+I got the most amount of backlash for this challenge, saying that this is practically impossible, given the limited 5 attempts to solve. Here was my thought process on the solve for this challenge.
+
+#### Finding my major
+In order to find out which class this was, the first step should be to find out what major I am. The people who knew me would remember that I'm a Chemical Engineer. Surprisingly, only 1 out of the 5 people who solved this chall knew who I was. This would of course give an unfair advantage, so I also mentioned it in the [**Cornell University public Discord Server**](https://discord.gg/EAaH9xf6QV)
+
+![Tcp2](/assets/images/ctf-writeups/cornellsp26/OSINT11.png)
+
+#### Finding the class
+Okay, that reduces it down a bit. But what type of class should I be looking for? The hint did mention that it was a required class, so electives and upper level classes are out of the picture. But there are still so many classes to choose from.
+
+#### Looking up the TAs
+We see in the picture that Angel and Lara are passing back the exams. If you looked up "Angel Cornell Chemical Engineering" and "Lara Cornell Chemical Engineering" then you would find hits with both of them being seniors.
+
+#### A "leap" of logic
+A small jump in logic here is required seeing how both TA's are ChemE seniors, this is most likely a class full of ChemE's. From there, it's very easy to deduce which class it is. If you found any of my social's either Instagram or Linkedin or even in the discord servers, you would know that I'm a class of '28. This means that I am currently a sophomore in semester 4 in 2026. Which leaves the only class which could be filled with ChemE's be EngrD2190 from the ChemE flowchart.
+
+![Tcp3](/assets/images/ctf-writeups/cornellsp26/OSINT12.png)
+
+Thus the flag is:
+```
+ccy{EngrD2190}
+```
+
+Thanks for reading this blog, it was quite fun making it.
