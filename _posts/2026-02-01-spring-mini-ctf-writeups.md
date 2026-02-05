@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Cornell Spring Mini CTF Writeups
-tags: Comp featured
+tags: competition featured ctf osint web
 author: toasty / Bill Nguyen
-pretty-date: 1 Feb. 2026
-excerpt: Spring 26 Cornell CTF Writeup
+pretty-date: 1 February, 2026
+excerpt: Spring '26 Cornell CTF Writeup
 ---
 
 The Spring CTF concluded on January 31st, 2026 with 48 users and 1 unblooded challenge. Unlike the Fall mini CTF, this competiion included challenges made by members of the CTF competition team. With NECCDC in the same month, I only managed to make 1 blind web challenge, and also a collection of OSINT challenges, which were mostly from my photo dump in Vietnam. 

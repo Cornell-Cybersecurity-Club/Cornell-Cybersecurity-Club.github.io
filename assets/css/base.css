@@ -20,6 +20,10 @@ body {
     color: var(--primary-text-color)
 }
 
+.highlighter-rouge {
+    overflow-x: scroll;
+}
+
 .alt-backing {
     background-color: var(--alt-bg);
     border: solid var(--border-color) 1px;

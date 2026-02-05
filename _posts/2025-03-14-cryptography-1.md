@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cryptography 1
-tags: NME cryptography learn beginner-friendly ctf jeopardy featured
+tags: nme cryptography learn beginner-friendly ctf jeopardy
 author: Jakob Nacanaynay, Claude
 pretty-date: 14 March, 2025
 excerpt: test your understanding of encryption, decryption, hashing, and related security concepts
