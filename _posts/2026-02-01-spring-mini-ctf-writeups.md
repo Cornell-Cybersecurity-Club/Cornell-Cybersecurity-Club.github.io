@@ -121,11 +121,11 @@ e.g. ccy{343 Campus Rd, Ithaca, NY 14853}
 ![Food1](/assets/images/ctf-writeups/cornellsp26/OSINT5.jpg)
 ![Food2](/assets/images/ctf-writeups/cornellsp26/OSINT6.jpg)
 
-This is where the challenges got difficult. A google image search on the second photo would reveal that the food I was eating was called ``bánh khọt``. If you noticed there were either shrimps or squids there also, which in Vietnamese would be ``tôm`` or ``mực``,repsectively. Creatively, the full name of that dish is ``bánh khọt tôm`` or ``bánh khọt mực``. 
+This is where the challenges got difficult. A google image search on the first photo would reveal that the food I was eating was called ``bánh khọt``. If you noticed there were either shrimps or squids there also, which in Vietnamese would be ``tôm`` or ``mực``,repsectively. Creatively, the full name of that dish is ``bánh khọt tôm`` or ``bánh khọt mực``.
 
 However a problem quickly arises, there are too many places that sell that food in the area. You *could* go through all of the stores that sell the food, nothing wrong with that. But there are better ways to do this.
 
-Looking at the first picture, you might have noticed that the store is located in a small road (You could see the car and refer to that). That's a big hint as a lot of of the stores are tourism traps, which are usually out in the open roads.
+Looking at the second picture, you might have noticed that the store is located in a small road (You could see the car and refer to that). That's a big hint as a lot of of the stores are tourism traps, which are usually out in the open roads.
 
 ![Food3](/assets/images/ctf-writeups/cornellsp26/OSINT7.png)
 
