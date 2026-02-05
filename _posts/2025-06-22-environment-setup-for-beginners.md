@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Environment Setup for Beginners
-tags: NME
+tags: nme setup
 author: Jakob Nacanaynay
 pretty-date: 22 June, 2025
 excerpt: Just run Linux!

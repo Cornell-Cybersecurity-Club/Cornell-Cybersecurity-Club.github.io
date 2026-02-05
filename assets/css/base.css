@@ -4,6 +4,7 @@
     --primary-red: #fb2139;
     --alt-red: #ee828f;
     --primary-bg: #1a1a1a;
+    --dots-bg: #5b5b5b;
     --alt-bg: #232323;
     --border-color: #969696;
 }
@@ -11,12 +12,16 @@
 body {
     margin: 0;
     background-color: var(--primary-bg);
-    background-image: radial-gradient(circle at center, var(--border-color) 1px, transparent 0);
+    background-image: radial-gradient(circle at center, var(--dots-bg) 1px, transparent 0);
     background-size: 40px 40px; 
     min-height: 100vh;
     width: 100%;
     font-family: "MesloNerdFont", monospace;
     color: var(--primary-text-color)
+}
+
+.highlighter-rouge {
+    overflow-x: scroll;
 }
 
 .alt-backing {
