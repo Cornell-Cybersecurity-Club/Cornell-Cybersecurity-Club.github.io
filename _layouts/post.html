@@ -19,11 +19,36 @@
     <main class="content alt-backing">
             <h1>{{ page.title }}</h1>
             <div class="info">
-        <span class="icon">&#xf415</span> {{ page.author }}
+        <span class="icon">&#xf415</span>
+        {% if page.authors %}
+            {% assign author_names = "" | split: "" %}
+
+            {% for author_id in page.authors %}
+              {% assign author_data = site.data.authors[author_id] %}
+                {% assign author_names = author_names | push: author_data.name %}
+            {% endfor %}
+
+            {{ author_names | join: ", " }}
+        {% elsif page.author %}
+            {{ site.data.authors[page.author].name }}
+        {% endif %}
         <br />
         <span class="icon">&#xf00ed</span> {{ page.pretty-date }}
         </div>
             {{ content }}
+            <hr />
+            {% if page.authors %}
+                <h2>Authors</h2>
+                <ul>
+                {% for author_id in page.authors %}
+                    {% assign author_data = site.data.authors[author_id] %}
+                    <li>{{ author_data.name }} - {{ author_data.bio }}</li>
+                {% endfor %}
+                </ul>
+            {% elsif page.author %}
+                <h1>Author</h1>
+                {{ site.data.authors[page.author].name }} - {{ site.data.authors[page.author].bio }}
+            {% endif %}
     </main>
     <script>
         MathJax = {

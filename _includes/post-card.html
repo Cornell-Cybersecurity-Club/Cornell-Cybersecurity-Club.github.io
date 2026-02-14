@@ -1,7 +1,19 @@
 <a class="alt-backing post-card" href="{{ post.url }}">
     <h3>{{ post.title }}</h3>
     <div class="info">
-        <span class="icon">&#xf415</span> {{post.author}}
+        <span class="icon">&#xf415</span>
+        {% if post.authors %}
+            {% assign author_names = "" | split: "" %}
+
+            {% for author_id in post.authors %}
+              {% assign author_data = site.data.authors[author_id] %}
+                {% assign author_names = author_names | push: author_data.name %}
+            {% endfor %}
+
+            {{ author_names | join: ", " }}
+        {% elsif post.author %}
+            {{ site.data.authors[post.author].name }}
+        {% endif %}
         <br />
         <span class="icon">&#xf00ed</span> {{post.pretty-date}}
     </div>

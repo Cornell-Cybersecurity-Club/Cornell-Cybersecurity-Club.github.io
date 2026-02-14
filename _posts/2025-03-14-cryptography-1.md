@@ -2,7 +2,9 @@
 layout: post
 title: Cryptography 1
 tags: nme cryptography learn beginner-friendly ctf jeopardy
-author: Jakob Nacanaynay, Claude
+authors:
+  - jn567
+  - claude
 pretty-date: 14 March, 2025
 excerpt: test your understanding of encryption, decryption, hashing, and related security concepts
 ---
@@ -29,7 +31,8 @@ These challenges test your understanding of encryption, decryption, hashing, and
 - Can be broken with frequency analysis—looking for how common characters are used to determine what letter they map to
 
 ![Image](https://pi.math.cornell.edu/~morris/135/letterfreq.jpg)
-https://pi.math.cornell.edu/~morris/135/letterfreq.jpg
+
+[https://pi.math.cornell.edu/~morris/135/letterfreq.jpg](https://pi.math.cornell.edu/~morris/135/letterfreq.jpg)
 
 ### One-Time Pad (OTP)
 
