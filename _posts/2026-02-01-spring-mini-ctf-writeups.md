@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cornell Spring Mini CTF Writeups
-tags: competition featured ctf osint web
+tags: competition featured ctf osint web writeup
 author: nn347
 pretty-date: 1 February, 2026
 excerpt: Spring '26 Cornell CTF Writeup
