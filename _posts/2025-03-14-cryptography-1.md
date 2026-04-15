@@ -95,7 +95,7 @@ Examples: RSA, ECC, ElGamal
 Solves key distribution problem
 CTF challenges often involve mathematical weaknesses
 
-Here is a very good video that explains how both symmetric and asymmetric encryption works: Will Quantum Computers break encryption?
+[Here is a very good video](https://youtu.be/6H_9l9N3IXU) that explains how both symmetric and asymmetric encryption works: Will Quantum Computers break encryption?
 Watch up to 5:20 (it will talk about quantum encryption after which we won’t cover).
 
 Many internet protocols, including HTTPS which secures web traffic, will use both asymmetric and symmetric encryption.
